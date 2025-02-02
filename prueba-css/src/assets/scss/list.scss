@@ -1,0 +1,14 @@
+.list {
+  padding: 0 30px;
+  margin: 0 60px 0 0;
+
+  li {
+    &::marker {
+      color: $primary;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+}

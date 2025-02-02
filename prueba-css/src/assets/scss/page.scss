@@ -1,0 +1,71 @@
+.page {
+  background-image: url('assets/bg-triangles.png');
+  background-position: top left;
+  background-color: $bg-color;
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+  position: relative;
+  overflow-x: hidden;
+  padding: 15px;
+
+  &-top {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;   
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 60px;
+
+    @media screen and (min-width: $screen-2xl) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  }
+
+  &-section {
+    display: flex;
+    flex: 0 0 54%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &-article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 24px;
+    letter-spacing: 1px;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 28px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      font-size: 32px;
+    }
+  }
+
+  &-grid {
+    display: grid;
+    flex: 0 0 42%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0;
+
+    @media screen and (min-width: $screen-sm) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 35% 65%;
+    }
+  }
+}

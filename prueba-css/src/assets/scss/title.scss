@@ -1,0 +1,24 @@
+.title {
+  margin: 0;
+  line-height: 1;
+}
+
+h1.title {
+  font-size: $title-default;
+  font-weight: $font-regular;
+  color: $secondary;
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: $title-lg;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: $title-xl;
+  }
+}
+
+h2.title {
+  font-size: $subtitle-default;
+  font-weight: $font-bold;
+  color: $primary;
+}

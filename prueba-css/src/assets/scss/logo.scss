@@ -1,0 +1,15 @@
+.logo {
+   display: block;
+   width: $logo-default;
+   margin: 0 auto;
+
+   @media screen and (min-width: $screen-lg) {
+      width: $logo-md;
+      margin: 0;
+      margin-left: auto;
+   }
+
+   @media screen and (min-width: $screen-xl) {
+      width: $logo-lg;
+   }
+}

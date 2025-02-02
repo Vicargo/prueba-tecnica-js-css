@@ -1,0 +1,16 @@
+{
+  "name": "prueba-tecnica-js-css",
+  "version": "1.0.0",
+  "description": "Prueba ténica para el puesto Analista Programador Frontend.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass prueba-css/src/assets/scss/styles.scss prueba-css/src/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Victor Arnau",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  }
+}
